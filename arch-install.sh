@@ -36,6 +36,12 @@ sudo pacman -S fish
 # Audio control GUI
 sudo pacman -S pavucontrol
 
+# Support for HEIC images (iPhone)
+sudo pacman -S libheif
+
+# Image editing
+sudo pacman -S imagemagick gimp
+
 # Desktop environment
 sudo pacman -S waybar rofi-wayland swaync
 
