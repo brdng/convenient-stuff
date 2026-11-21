@@ -1,0 +1,36 @@
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
+
+
+###########
+# ALIASES #
+###########
+
+# Fish
+alias fishconf='vim ~/.config/fish/config.fish'
+alias gofish='source ~/.config/fish/config.fish'
+
+# Git
+alias gs='git status'
+alias gco='git checkout'
+alias ga='git add'
+alias gcob='git checkout -b'
+alias gcm='git commit -m'
+alias gres='git restore'
+alias gress='git restore --staged'
+alias glo='git log --oneline'
+
+# Plex
+alias plexstart='sudo systemctl start plexmediaserver.service'
+alias plexstop='sudo systemctl stop plexmediaserver.service'
+alias plexstatus='sudo systemctl status plexmediaserver.service'
+
+#########
+# START #
+#########
+
+# pokemon-colorscripts -r
+# curl -s 'wttr.in/KLGA?uq1'
+
+# starship init fish | source
