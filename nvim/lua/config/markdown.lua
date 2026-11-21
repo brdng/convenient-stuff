@@ -13,5 +13,11 @@ vim.api.nvim_create_user_command("MarkdownPreview", function()
 
 	vim.cmd("botright 15new")
 
-	vim.fn.termopen({ "glow", "-p", file })
+	vim.fn.termopen({
+		"sh",
+		"-c",
+		'while true; do clear; glow "$1"; sleep 1; done',
+		"sh",
+		file
+	})
 end, {})
